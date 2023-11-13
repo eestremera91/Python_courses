@@ -1,0 +1,13 @@
+0.- Entras a CMD.
+1.- Entras a tu carpeta con el comando cd.
+2.- Ingresa el comando “py -m pip install virtualenv”.
+3.- Pones el comando py -m venv nombre_de_tu_espacio_virtual".
+4.- Colocas "nombre_de_tu_espacio_virtual\Scripts\activate"
+5.- Por último, tipeas “pip install nombre_de_librería” en este caso, el nombre de la librería que queremos en “bokeh”.
+6.- Para ver los requerimientos que tienes instalados ejecutas: pip freeze
+7.- Para guardar los requerimientos tecleas: pip freeze > requirements.txt
+8.- Para instalar los requerimientos de otro entorno virtual tecleas: pip install -r > requirements.txt
+7.- Incluye la carpeta del entorno virtual en un .gitignore para que no se actualice al repositorio
+8.- para desactivar tecleas: deactivate
+
+Si no te funciona, prueba colocar “python” en lugar de “py”.

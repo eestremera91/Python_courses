@@ -1,0 +1,38 @@
+import time
+import sys
+from os import system
+
+def factorial(n):
+    response = 1
+
+    while n > 1:
+        response = response * n
+        n = n - 1
+
+    return response
+
+
+def factorial_recursive(n):
+    if n == 1:
+        return 1
+
+    return n * factorial_recursive(n - 1)
+
+
+def main():
+    n = 1000
+    sys.setrecursionlimit(n + 10)
+
+    startingTime = time.time()
+    factorial(n)
+    endTime = time.time()
+    print(f"Execturion time with bucle\t{endTime - startingTime}");
+
+    startingTime = time.time()
+    factorial_recursive(n)
+    endTime = time.time()
+    print(f"Execution time with recusive\t{endTime - startingTime}")
+
+if  __name__  ==  '__main__' :
+    system('cls')
+    main()

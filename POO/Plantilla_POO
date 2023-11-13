@@ -1,0 +1,32 @@
+class name:
+    def __init__(self):
+        pass
+
+#tratar atributos privados
+    @property
+    def name_atributo(self):  #Definimos el método para obtener el atributo
+        pass
+
+    #Hasta aquí definimos los métodos para obtener los atributos ocultos o privados getter.
+    #Ahora vamos a utilizar setter y deleter para modificarlos
+
+    @name_atributo.setter #Propiedad SETTER
+    def name_atributo(self, nuevo):
+        pass
+
+    @name_atributo.deleter #Propiedad DELETER
+    def name_atributo(self): 
+        pass
+
+#Otra variante de lo anterior. Aquí se definen los métodos y luego con la línea 31 se asignan como setter, getter, deleter
+
+    def metodo_para_obtener_el_atributo(self):      #Definimos el método para obtener el atributo:   Getter
+        pass
+   
+    def metodo_para_modificar_el_atributo(self):    #Definimos el método para modificar el atributo: Setter
+        pass
+
+    def metodo_para_eliminar_el_atributo(self):     #Definimos el método para eliminar el atributo:  Deleter
+        pass
+
+    nombre_atributo  = property(metodo_para_obtener_el_atributo, metodo_para_modificar_el_atributo, metodo_para_eliminar_el_atributo)
